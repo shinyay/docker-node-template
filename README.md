@@ -15,6 +15,17 @@ This is a template project for Node on Docker
 
 ## Usage
 
+```
+$ docker-compose build
+$ docker-compose up -d
+```
+
+```
+$ docker exec -it node-app /bin/sh
+# npm install
+
+```
+
 ## Installation
 
 ## Licence
