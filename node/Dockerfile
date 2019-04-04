@@ -1,5 +1,8 @@
 FROM node:lts-alpine
 
+# development/production
+ENV NODE_ENV=development
+
 RUN npm install -g http-server
 
 WORKDIR /app
