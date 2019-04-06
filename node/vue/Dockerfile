@@ -8,7 +8,6 @@ RUN apk update && \
     npm install -g @vue/cli
 
 WORKDIR /app
-COPY ./app .
 RUN npm install
 
 EXPOSE 8080
