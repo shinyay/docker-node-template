@@ -3,17 +3,13 @@ FROM node:lts-alpine
 # development/production
 ENV NODE_ENV=development
 
-RUN npm install -g http-server
+RUN apk update && \
+    npm install -g npm && \
+    npm install -g @vue/cli
 
 WORKDIR /app
-
-COPY package*.json ./
-
+COPY ./app .
 RUN npm install
 
-COPY . .
-
-RUN npm run build
-
 EXPOSE 8080
-CMD [ "http-server", "dist" ]
+CMD ["ash"]
