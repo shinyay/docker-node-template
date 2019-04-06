@@ -8,7 +8,7 @@ RUN apk update && \
     npm install -g @vue/cli
 
 WORKDIR /app
-RUN npm install
+RUN yarn install
 
 EXPOSE 8080
 CMD ["ash"]
