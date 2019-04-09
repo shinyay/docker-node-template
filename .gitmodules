@@ -1,0 +1,3 @@
+[submodule "node/vue"]
+	path = node/vue
+	url = https://github.com/shinyay/docker-vue-cli.git
